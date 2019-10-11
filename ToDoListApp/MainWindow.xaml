@@ -1,0 +1,25 @@
+﻿<Window x:Class="ToDoListApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Todo List App" Height="500" Width="861.2">
+    <DockPanel LastChildFill="True" Margin="5">
+        <Border BorderBrush="SteelBlue" BorderThickness="1">
+            <ScrollViewer DockPanel.Dock="Left" Margin="0,0.2,0,0" Width="189">
+                <Menu>
+                    <Menu.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Background="White"></StackPanel>
+                        </ItemsPanelTemplate>
+                    </Menu.ItemsPanel>
+                    <MenuItem Header="New List" Click="NewListItem_Click"></MenuItem>
+                    <MenuItem Header="Exit" Click="ExitItem_Click"></MenuItem>
+                </Menu>
+            </ScrollViewer>
+        </Border>
+        <Grid>
+            <StackPanel Name="StackPanel" Margin="10,25,0.4,-0.2">
+            </StackPanel>
+            <Label Content="Todo Lists" FontSize="15" Margin="10,-6,10.4,0" VerticalAlignment="Top" Height="31" />
+        </Grid>
+    </DockPanel>
+</Window>

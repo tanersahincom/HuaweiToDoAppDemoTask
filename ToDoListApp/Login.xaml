@@ -1,0 +1,73 @@
+﻿<Window x:Class="ToDoListApp.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Login"
+        WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight" SnapsToDevicePixels="True"
+        AllowsTransparency="True" WindowStyle="None" ResizeMode="NoResize">
+    <Window.Resources>
+    </Window.Resources>
+    <Border>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="48" />
+                <RowDefinition Height="1" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="8,0,0,0" Height="40">
+                    <Path Width="19.5" Height="28.5" Margin="20,0,12,0" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center"  Data="F1 M 25,27L 46,19L 46,22.25L 28.5,29L 31.75,31.25L 51,23.75L 51,48.5L 31.75,57L 25,52L 25,27 Z " />
+                    <TextBlock Text="Login Window" FontSize="20" Margin="8,2,0,0" FontWeight="Normal" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </StackPanel>
+                <Thumb Opacity="0" Background="Transparent" Foreground="{x:Null}" />
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,8,0">
+                    <Button Name="ButtonMinimize" Content="_" Foreground="White" ToolTip="Minimize" Width="40" Height="26" Click="ButtonMinimize_Click">
+                    </Button>
+                    <Button Name="ButtonClose" ToolTip="Close"  Width="40" Height="26" Content="X" Click="ButtonClose_Click">
+                    </Button>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1" ></Grid>
+            <Grid Grid.Row="2">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0" Visibility="Visible" Name="Grid" Width="380">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="55*" />
+                            <RowDefinition Height="351*" />
+                        </Grid.RowDefinitions>
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="80,10.4,80,0.4" Grid.Row="1">
+                            <Label Content="Todo List Login" Margin="0,4,0,12" HorizontalAlignment="Center"  FontSize="26"></Label>
+                            <Label Content="User Name" Margin="0,4,0,6" HorizontalAlignment="Left"  FontSize="12"></Label>
+                            <Grid Margin="0,0,0,8">
+                                <TextBlock Margin="4,1,2,0" VerticalAlignment="Center" TextAlignment="Center" FontSize="16" Height="24" />
+                                <TextBox   Name="UserName" CharacterCasing="Lower" TabIndex="0" />
+                            </Grid>
+                            <Label Content="Password" Margin="0,4,0,6" HorizontalAlignment="Left"  FontSize="12"></Label>
+                            <Grid Margin="0,0,0,8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="39*" />
+                                    <ColumnDefinition Width="5*" />
+                                </Grid.ColumnDefinitions>
+
+                                <PasswordBox  TabIndex="1" Name="PasswordText" KeyDown="OnKeyDownHandler" PasswordChar="*" Margin="4,1,2,-0.2" VerticalAlignment="Center"  FontSize="16" Height="24" Grid.ColumnSpan="2" />
+                            </Grid>
+                            <Grid Margin="0,0,0,8" />
+                            <Button Name="LoginButton"  Content="Login" Width="220" Height="36" TabIndex="2" Margin="0,0,0,32" Click="LoginButton_Click" />
+                            <Label PreviewMouseDown="Register_Clicked" Content="Not a Member? Register From Here" />
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Column="1" Name="SplitGrid" Width="20" Visibility="Visible">
+                        <StackPanel Height="326" Width="1"  Margin="0,40,0,40"></StackPanel>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

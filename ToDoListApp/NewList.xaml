@@ -1,0 +1,13 @@
+﻿<Window x:Class="ToDoListApp.NewList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="New List" Height="156.754" Width="281.754">
+    <StackPanel>
+        <TextBlock Text="Enter List Name" Height="27" Margin="10,5,0.2,0" />
+        <TextBox KeyDown="OnKeyDownHandler" TabIndex="0" x:Name="ToDoName" Margin="10,0,10.2,0" />
+        <Button TabIndex="1" Content="OK" Click="OKButton_Click" Margin="0,5,10.2,0" HorizontalAlignment="Right" Width="76" />
+    </StackPanel>
+</Window>
