@@ -6,6 +6,7 @@ Huawei To Do App Demo Task
 
 Expected features are;
 ✓ User registration
+
 ✓ User login
 ✓ Create to-do list. Each user will be able to have multiple to-do lists. Each to-do list will have a name.
 ✓ List of to-do lists.
