@@ -4,6 +4,7 @@ Status : ✓ Passed
 
 Huawei To Do App Demo Task
 
+
 Expected features are;
 
 ✓ User registration
@@ -27,6 +28,7 @@ Expected features are;
 ✓ Mark to-do item as "Complete".
 
 ✓ Filter to-do items (status complete or not, expired, name) on a to-do list
+
 
 
 General Expectations;
