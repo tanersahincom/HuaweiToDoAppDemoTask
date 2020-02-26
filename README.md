@@ -1,7 +1,7 @@
 # HuaweiToDoAppDemoTask
 Huawei  WPF Todo Application Demo Task
 
-Status : ✓ Passed
+Status : ✔ Passed
 
 
 
