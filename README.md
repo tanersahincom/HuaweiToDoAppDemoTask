@@ -3,7 +3,6 @@ Huawei  WPF Todo Application Demo Task
 
 Status : ✓ Passed
 
-Huawei To Do App Demo Task
 
 
 Expected features are;
